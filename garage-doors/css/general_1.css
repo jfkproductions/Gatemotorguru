@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* This is to prevent IE from putting borders around clickable images */
+a img {border: none}
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:0;
+	}
+
+.banner{
+	padding:0px;
+        margin:0px;
+}
+
+
+.left {
+	background:url(../images/left.jpg) no-repeat top;
+	padding:10px 0 0 10px;}
+	
+.right {
+	background:url(../images/right.jpg) no-repeat top;
+	padding:10px 0 0 10px;}
+
+.top{
+	display:block;
+	float:left;
+	clear:left;}
+
+.middle{
+	background:#e1e1e1 url(../images/middle.jpg) no-repeat left bottom;
+	display:block;
+	float:left;
+	clear:left;
+	margin:0;
+	width:428px;
+	padding:0 10px 0 5px;
+	font-family: "Lucida Console", Monaco, monospace;
+	line-height:20px;
+}
+
+.bottom{
+	display:block;
+	float:left;
+	clear:left;	}
+	
+h1{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#ED3237;
+	margin:0;
+	font-size:26px;
+	font-weight:normal;}	
+
+h2{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#ED3237;
+	margin:0;
+	font-size:17px;
+	font-weight:normal;}	
+
+a {
+    color:#ED3237;
+}
+
+.ImageLinkBoxLess {
+    border-style: none;
+
+}
+
+
+.form_table{}
+
+.td_label{
+	width:220px;
+	font-weight:bold;
+	padding :0 5px 0 0;
+}
+
+.td_formelements{
+	padding: 0px 0 5px 0;
+}
+
+
+.LargeAreaLink {
+    font-size: 18pt;
+    text-decoration: underline;
+    color: #ED3237;
+}
+
+.SmallAreaLink {
+    font-size: 12pt;
+    text-decoration: none;
+    color: #0079ff;
+}
+
+.GearLargeArea {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:28px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #EA3237;
+}
+
+.GearSmallArea {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+
+
+.Hidden {
+    display:none;
+    visibility: hidden;
+}
+
+.Visible {
+    visibility: visible;
+}
+
+.Bullets li {
+    margin-top: 0.8em;
+    margin-bottom: 0.0em;
+
+}
+
+
+
+/* new expiremental popup */
+div.GuruThumb{
+    position:relative; /*this is the key*/
+    z-index:24; 
+    text-decoration:none}
+
+div.GuruThumb:hover{z-index:25; }
+
+div.GuruThumb span{display: none}
+
+div.GuruThumb:hover span{ /*the span will display just on :hover state*/
+    padding:10px;
+    display:block;
+    position:absolute;
+    top:-5em; left:-2em; width:15em;
+    border:2px solid lightgrey;
+    background-color:white; color:#000;
+    text-align: center}
+
+
+
+/* For rounded corners without images */
+b.rtop, b.rbottom{display:block;background: #AAAAAA}
+b.rtop b, b.rbottom b{display:block;height: 1px;
+    overflow: hidden; background: #AAAAAA}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
+
+/* My own Article format styling */
+
+.Article {
+    border-style: solid;
+    width:700px;
+    margin-left:50px;
+    padding:15px;
+    padding-right:50px;
+}
+
+.Article h1 { 
+}
+
+.Article h2 {
+    margin-left:0px;
+}
+
+.Article p {
+    margin-top: 0;
+    margin-left:10px;
+}
+
+
+.AreaBox {
+    background-image:url('../images/areabox.png');
+    width:209px;
+    height: 193px;
+}
+
+
+
+.fadedBoxTop{
+    background:url('../images/faded-box-top.png') left top no-repeat;
+    width:348px;
+    height: 42px;
+}
+
+.fadedBoxMiddle{
+    background:url('../images/faded-box-middle.png') left top repeat-y;
+    width:348px;
+
+}
+
+
+.fadedBoxBottom{
+    background:url('../images/faded-box-bottom.png') left top no-repeat;
+    width:348px;
+    height: 58px;
+
+}
+
+/* --- */
+
+
+.greyBoxTop{
+    background:url('../images/faded-box-top.png') left top no-repeat;
+    width:350px;
+    height: 40px;
+    padding:0px;
+    margin:0px;
+    border-width:  0px;
+    border-style: none;
+
+}
+
+.greyBoxMiddle{
+    background:url('../images/faded-box-middle.png') left top repeat-y;
+    width:350px;
+    margin: 0px;
+}
+
+
+.greyBoxBottom{
+    background:url('../images/faded-box-bottom.png') left top no-repeat;
+    width:350px;
+    height: 60px;
+    padding:0px;
+    margin:0px;
+    border-width: 0px;
+    border-style: none;
+
+}
+
+
+
+
+.ServicesButton {
+    background:url('../images/services-button.jpg') left top no-repeat;
+    width: 229px;
+    height:49px;
+    display: block;
+    padding-top:10px;
+    font-size:19px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+
+.BrandsButton {
+    background:url('../images/brands-button.jpg') left top no-repeat;
+    width: 274px;
+    height:49px;
+    display: block;
+    padding-top:10px;
+    font-size:19px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.Gauteng {
+    background:url('../images/Gauteng.png') left top no-repeat;
+}
+
+
+.Kzn {
+    background:url('../images/Kzn.png') left top no-repeat;
+}
+
+.Cape {
+    background:url('../images/Cape.png') left top no-repeat;
+}
+
+
+
+
+.TopNav a {
+    color : black;
+    background: none;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.LargeBoldRed {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:#ED3237;
+    margin:0;
+    font-size:26px;
+    font-weight:normal;
+}
